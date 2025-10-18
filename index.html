@@ -1,30 +1,143 @@
+<!DOCTYPE html>
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My portfolio</title>
+    <title>Резюме - Николай Семенов</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Резюмеха</h1>
-        <p>Systems analyst</p>
-    </header>
-    
-    <section id="about">
-        <h2>About me</h2>
-        <p>There are my work and tasks</p>
-    </section>
-    
-    <section id="projects">
-        <h2>Мои проекты</h2>
-        <p>Скоро здесь появятся мои работы!</p>
-    </section>
-    
-    <footer>
-        <p>Контакты: тут будет мой имейл</p>
+    <div class="container">
+        <!-- Боковая панель -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img src="https://via.placeholder.com/150" alt="Фото профиля" class="profile-img">
+                <h1>Николай</h1>
+                <p class="profession">Системный аналитик</p>
+            </div>
+
+            <div class="contact-info">
+                <h2>Контакты</h2>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <span>your.email@example.com</span>
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <span>+7 (XXX) XXX-XX-XX</span>
+                </div>
+                <div class="contact-item">
+                    <span>📍</span>
+                    <span>Город, Страна</span>
+                </div>
+                <div class="contact-item">
+                    <span>💼</span>
+                    <span>GitHub: ваш-логин</span>
+                </div>
+            </div>
+
+            <div class="skills">
+                <h2>Навыки</h2>
+                <div class="skill-item">
+                    <span>HTML/CSS</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>JavaScript</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 70%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Python</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <span>Git</span>
+                    <div class="skill-level">
+                        <div class="skill-progress" style="width: 75%"></div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Основное содержание -->
+        <main class="main-content">
+            <section class="section">
+                <h2>Обо мне</h2>
+                <p>Начинающий веб-разработчик с passion к созданию красивых и функциональных веб-сайтов. Ищу возможности для роста и развития в IT-сфере.</p>
+            </section>
+
+            <section class="section">
+                <h2>Опыт работы</h2>
+                <div class="experience-item">
+                    <h3>Стажёр Frontend-разработчик</h3>
+                    <p class="company">Название компании | Июнь 2023 - Август 2023</p>
+                    <ul>
+                        <li>Разрабатывал пользовательские интерфейсы с использованием HTML, CSS, JavaScript</li>
+                        <li>Участвовал в код-ревью и командной разработке</li>
+                        <li>Оптимизировал производительность веб-приложений</li>
+                    </ul>
+                </div>
+                
+                <div class="experience-item">
+                    <h3>Фриланс проекты</h3>
+                    <p class="company">Самостоятельная работа | 2022 - настоящее время</p>
+                    <ul>
+                        <li>Создавал сайты-визитки для малого бизнеса</li>
+                        <li>Разрабатывал лендинги и промо-страницы</li>
+                        <li>Верстал адаптивные макеты</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Образование</h2>
+                <div class="education-item">
+                    <h3>Название университета</h3>
+                    <p class="degree">Бакалавр компьютерных наук</p>
+                    <p class="dates">2020 - 2024</p>
+                </div>
+                
+                <div class="education-item">
+                    <h3>Онлайн курсы</h3>
+                    <p class="degree">Веб-разработка с нуля</p>
+                    <p class="dates">2023</p>
+                </div>
+            </section>
+
+            <section class="section">
+                <h2>Проекты</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <h3>Личный блог</h3>
+                        <p>Статический сайт на HTML/CSS с адаптивным дизайном</p>
+                        <span class="tech">HTML · CSS · JavaScript</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>To-Do приложение</h3>
+                        <p>Простое приложение для управления задачами</p>
+                        <span class="tech">JavaScript · LocalStorage</span>
+                    </div>
+                    
+                    <div class="project-card">
+                        <h3>Портфолио сайт</h3>
+                        <p>Современное портфолио с анимациями</p>
+                        <span class="tech">HTML · CSS · GSAP</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <footer class="footer">
+        <p>Обновлено: Декабрь 2024</p>
     </footer>
-    
-    <script src="script.js"></script>
 </body>
 </html>
